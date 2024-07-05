@@ -46,12 +46,60 @@ public class Program
         SaveTasks();
     }
 
+    static void EditTask()
+    {
+        ViewTasks();
+
+        if (tasks.Count == 0)
+        {
+            return;
+        }
+
+        if (int.TryParse(Console.ReadLine(), out int taskNumber) && taskNumber > 0 && taskNumber <= tasks.Count)
+        {
+            int index = taskNumber - 1;
+            Console.WriteLine($"Current task: {tasks[index]}");
+            Console.Write("Enter the new task description: ");
+            string newDescription = Console.ReadLine();
+            tasks[index] = newDescription;
+            Console.WriteLine("Task updated successfully.");
+            SaveTasks();
+        }
+        else
+        {
+            Console.WriteLine("Invalid task number.");
+        }
+
+    }
+
+    static void RemoveTask()
+    {
+        ViewTasks(); // Show current tasks
+        if (tasks.Count == 0) return; // If no tasks, return to menu
+
+        Console.Write("Enter the number of the task you want to remove: ");
+        if (int.TryParse(Console.ReadLine(), out int taskNumber) && taskNumber > 0 && taskNumber <= tasks.Count)
+        {
+            int index = taskNumber - 1; // Convert to zero-based index
+            string removedTask = tasks[index];
+            tasks.RemoveAt(index);
+            Console.WriteLine($"Task removed: {removedTask}");
+            SaveTasks(); // Save changes to file
+        }
+        else
+        {
+            Console.WriteLine("Invalid task number.");
+        }
+    }
+
     static void DisplayMenu()
     {
         Console.WriteLine("\n--- To-Do List App ---");
         Console.WriteLine("1. Add a task");
         Console.WriteLine("2. View existing tasks");
-        Console.WriteLine("3. Exit");
+        Console.WriteLine("3. Edit a task");
+        Console.WriteLine("4. Remove a task");
+        Console.WriteLine("5. Exit");
         Console.Write("Choose a desired option: ");
     }
 
@@ -72,10 +120,16 @@ public class Program
                     ViewTasks();
                     break;
                 case "3":
-                    Console.WriteLine("Exiting an App.");
+                    EditTask();
+                    break;
+                case "4":
+                    RemoveTask();
+                    break;
+                case "5":
+                    Console.WriteLine("Exiting the App.");
                     return;
                 default:
-                    Console.WriteLine("invalid option. Please try again.");
+                    Console.WriteLine("Invalid option. Please try again.");
                     break;
             }
         }
