@@ -1,0 +1,14 @@
+/home/lukacho/CsharpProjects/TodoListApp/obj/Debug/net8.0/TodoListApp.GeneratedMSBuildEditorConfig.editorconfig
+/home/lukacho/CsharpProjects/TodoListApp/obj/Debug/net8.0/TodoListApp.AssemblyInfoInputs.cache
+/home/lukacho/CsharpProjects/TodoListApp/obj/Debug/net8.0/TodoListApp.AssemblyInfo.cs
+/home/lukacho/CsharpProjects/TodoListApp/obj/Debug/net8.0/TodoListApp.csproj.CoreCompileInputs.cache
+/home/lukacho/CsharpProjects/TodoListApp/bin/Debug/net8.0/TodoListApp
+/home/lukacho/CsharpProjects/TodoListApp/bin/Debug/net8.0/TodoListApp.deps.json
+/home/lukacho/CsharpProjects/TodoListApp/bin/Debug/net8.0/TodoListApp.runtimeconfig.json
+/home/lukacho/CsharpProjects/TodoListApp/bin/Debug/net8.0/TodoListApp.dll
+/home/lukacho/CsharpProjects/TodoListApp/bin/Debug/net8.0/TodoListApp.pdb
+/home/lukacho/CsharpProjects/TodoListApp/obj/Debug/net8.0/TodoListApp.dll
+/home/lukacho/CsharpProjects/TodoListApp/obj/Debug/net8.0/refint/TodoListApp.dll
+/home/lukacho/CsharpProjects/TodoListApp/obj/Debug/net8.0/TodoListApp.pdb
+/home/lukacho/CsharpProjects/TodoListApp/obj/Debug/net8.0/TodoListApp.genruntimeconfig.cache
+/home/lukacho/CsharpProjects/TodoListApp/obj/Debug/net8.0/ref/TodoListApp.dll
