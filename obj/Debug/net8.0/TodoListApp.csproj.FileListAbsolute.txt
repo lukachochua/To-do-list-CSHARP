@@ -12,3 +12,4 @@
 /home/lukacho/CsharpProjects/TodoListApp/obj/Debug/net8.0/TodoListApp.pdb
 /home/lukacho/CsharpProjects/TodoListApp/obj/Debug/net8.0/TodoListApp.genruntimeconfig.cache
 /home/lukacho/CsharpProjects/TodoListApp/obj/Debug/net8.0/ref/TodoListApp.dll
+/home/lukacho/CsharpProjects/TodoListApp/obj/Debug/net8.0/TodoListApp.sourcelink.json
